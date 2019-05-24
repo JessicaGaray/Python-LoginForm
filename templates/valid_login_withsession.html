@@ -1,0 +1,21 @@
+{% extends 'login_form.html' %}
+
+    {% block img %}
+    <div class="col-12">
+    <img src="https://via.placeholder.com/250" alt="" class="mx-auto text-center">
+    <br>
+    </div>
+    {% endblock %}
+    {% block email %}
+    
+        {{email}}
+    {% endblock %}
+    {% block password %}
+        {{password}}
+    {% endblock %}
+    {% block access %}
+        <p class="col-12 pt-3 text-center blue">Access granted!Welcome back!</p>
+        <a href="{{ url_for('logout') }}">
+        <input class="btn btn-primary btn-block" type="button" value="Log out">
+        </a>
+    {% endblock %}

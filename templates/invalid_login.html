@@ -1,0 +1,12 @@
+{% extends 'login_form.html' %}
+
+    {% block email %}
+        <input type="text" name="email">
+    {% endblock %}
+    {% block password %}
+        <input type="password" name="password">
+    {% endblock %}
+    {% block access %}
+        <input class="btn btn-primary btn-block" type="submit" value="Log in">
+        <p class="col-12 text-center red">Invalid user or password. Please try again.</p>
+    {% endblock %}
